@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>JavaScript String Example</h1>
+
+    <button onclick="showAlert()">Click me for Alert</button>
+    <button onclick="goBack()">Go Back</button>
+
+    <script>
+        // JavaScript code
+        var myString = "Hello, World!"; // This is a string variable
+
+        // Function to show the alert
+        function showAlert() {
+            alert("The value of myString is: " + myString);
+        }
+
+        // Function to go back to the previous page
+        function goBack() {
+            history.back();
+        }
+
+        // Display the string in the document
+        document.write("<p>The value of myString is: " + myString + "</p>");
+    </script>
+
+</body>
+</html>

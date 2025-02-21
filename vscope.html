@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Variable Scope Definition</title>
+  <link rel="stylesheet" href="javascript.css">
+</head>
+<body>
+<div class="menu">
+  <div class="logo">
+    <br>
+    <br>
+    <img src="niggas.jpg">
+  </div>
+  <ul>
+    <li><a href="datatypes.html">JavaScript Datatype</a></li>
+    <li><a href="variables.html">JavaScript Variables </a></li>
+    <li id="active-bg"><a href="vscope.html" id="active-text">Variable Scope</a></li>
+    <li><a href="vnames.html">JavaScript Variable Names</a></li>
+    <li><a href="rwords.html">JavaScript Reserved Words</a></li>
+    <li><a href="developer.html"><i class="fa-solid fa-users fa-fade"></i> Developer</a></li>
+  </ul>
+
+</div>
+<div class="header">
+  <p class="header-home">
+    <u>VARIABLE SCOPE</u>
+  </p>
+  <div class="vscope-menu">
+    <center><ul>
+    <li id="active-bg"><a href="vscope.html" class="vscope-menu" id="active-text">DEFINITION</a></li>
+    <li ><a href="vscope-syntax.html" class="vscope-menu">SYNTAX</a></li>
+    <li><a href="vscope-example.html" class="vscope-menu">EXAMPLE</a></li>
+    </ul></center>
+    <br>
+  </div>
+</div>
+  <div class="content">
+    <div class="v-scopedef">
+      <p><strong>Variable Scope</strong>  in JavaScript refers to the current context of code, which determines the accessibility of variables to JavaScript.</p>
+      <br>
+      <p><strong>Javascript has 3 types of scope:</strong></p>
+      <span id="text-bold"><p>1. Block Scope</p></span><p>
+        Starting with ECMAScript 6 (ES6), you can also use let and const to declare variables with block scope:
+        <br>
+        <br>
+        "let" and "const" variables are block-scoped, meaning they are limited to the block (inside {}) where they are declared.</p>
+        <br>
+      <span id="text-bold"><p>2. Local Scope</p></span><p>
+        Variables declared (inside a function) or block have local scope.
+        <br>
+        They can only be accessed within the function or block where they are defined.</p>
+        <br>
+      <span id="text-bold"><p>3. Global Scope</p></span><p>Variables declared Globally (outside any function) have Global Scope. 
+        Global variables can be accessed from anywhere in a JavaScript program.
+        Variables declared with var, let and const are quite similar when declared outside a block.
+        They all have Global Scope.</p>
+      </div>
+  </div>
+</div>
+</body>
+</html>

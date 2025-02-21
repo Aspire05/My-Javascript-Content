@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Login Example</h1>
+
+    <label for="username">Enter your username:</label>
+    <input type="text" id="usernameInput">
+    <button onclick="checkUsername()">Login</button>
+
+    <p id="loginMessage"></p>
+
+    <button onclick="goBack()">Go Back</button>
+
+    <script>
+        // JavaScript code
+        function checkUsername() {
+            var enteredUsername = document.getElementById("usernameInput").value.toLowerCase(); // Convert to lowercase for case-insensitivity
+
+            if (enteredUsername === "arena") {
+                document.getElementById("loginMessage").textContent = "Welcome! Master Arena";
+            } else {
+                document.getElementById("loginMessage").textContent = "Oops! You're not the one";
+            }
+        }
+
+        function goBack() {
+            history.back();
+        }
+    </script>
+
+</body>
+</html>

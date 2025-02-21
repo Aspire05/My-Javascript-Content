@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML + JavaScript Example with Variables</title>
+</head>
+<body>
+
+    <h1>HTML + JavaScript Example with Variables</h1>
+
+    <p id="demo">This is a demonstration of HTML + JavaScript with variables.</p>
+
+    <button onclick="goBack()">Go Back</button>
+
+    <script>
+        // JavaScript code
+        var myNumber = 42; // Number
+        var myString = "Hello, World!"; // String
+        var isTrue = true; // Boolean
+        var myObject = { key: "value" }; // Object
+        var myArray = [1, 2, 3]; // Array
+
+        // Manipulate variables
+        myNumber += 8;
+        myString += " Welcome to the example.";
+        isTrue = !isTrue;
+        myObject.newKey = "newValue";
+        myArray.push(4);
+
+        // Construct a message using the variables
+        var message = "Number: " + myNumber + "<br>";
+        message += "String: " + myString + "<br>";
+        message += "Boolean: " + isTrue + "<br>";
+        message += "Object: " + JSON.stringify(myObject) + "<br>";
+        message += "Array: " + myArray.join(", ");
+
+        // Update HTML content
+        document.getElementById("demo").innerHTML = message;
+
+        // Function to go back to the previous page
+        function goBack() {
+            history.back();
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML + JavaScript Example with 'const'</title>
+</head>
+<body>
+
+    <h1>HTML + JavaScript Example with 'const'</h1>
+
+    <p id="demo">This is a demonstration of HTML + JavaScript with 'const'.</p>
+
+    <script>
+        // JavaScript code using 'const' for variable declarations
+        const myNumber = 42; // Number (constant)
+        const myString = "Hello, World!"; // String (constant)
+        const isTrue = true; // Boolean (constant)
+        const myObject = { key: "value" }; // Object (constant)
+        const myArray = [1, 2, 3]; // Array (constant)
+
+        // Manipulate variables (not allowed for constants)
+        // myNumber += 8; // Error: Assignment to constant variable.
+        // myString += " Welcome to the example."; // Error: Assignment to constant variable.
+        // isTrue = !isTrue; // Error: Assignment to constant variable.
+        // myObject.newKey = "newValue"; // Works (object properties can be modified)
+        // myArray.push(4); // Works (array elements can be modified)
+
+        // Construct a message using the variables
+        const message = "Number: " + myNumber + "<br>";
+        const message += "String: " + myString + "<br>";
+        const message += "Boolean: " + isTrue + "<br>";
+        const message += "Object: " + JSON.stringify(myObject) + "<br>";
+        const message += "Array: " + myArray.join(", ");
+
+        // Update HTML content
+        document.getElementById("demo").innerHTML = message;
+
+        // Function to go back to the previous page
+        function goBack() {
+            history.back();
+        }
+    </script>
+
+</body>
+</html>

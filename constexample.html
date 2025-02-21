@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML + JavaScript Example with 'const', 'let', and 'var'</title>
+</head>
+<body>
+
+    <h1>HTML + JavaScript Example with 'const', 'let', and 'var'</h1>
+
+    <p id="demo">This is a demonstration of HTML + JavaScript with 'const', 'let', and 'var'.</p>
+
+    <script>
+        // JavaScript code using 'const', 'let', and 'var' for variable declarations
+        const myConstVariable = "I'm a constant.";
+        let myLetVariable = "I can be changed.";
+        var myVarVariable = "I am globally scoped.";
+
+        // Display variables in the console
+        console.log("Const Variable:", myConstVariable);
+        console.log("Let Variable (Before):", myLetVariable);
+        console.log("Var Variable (Before):", myVarVariable);
+
+        // Try to reassign const and let variables (let can be reassigned, const cannot)
+        // myConstVariable = "New Value"; // Error: Assignment to constant variable.
+        myLetVariable = "New Value"; // Works, let can be reassigned.
+        myVarVariable = "New Value"; // Works, var is globally scoped.
+
+        console.log("Let Variable (After):", myLetVariable);
+        console.log("Var Variable (After):", myVarVariable);
+
+        // Update HTML content
+        document.getElementById("demo").innerHTML =
+            "Const Variable: " + myConstVariable + "<br>" +
+            "Let Variable: " + myLetVariable + "<br>" +
+            "Var Variable: " + myVarVariable;
+
+        // Function to go back to the previous page
+        function goBack() {
+            history.back();
+        }
+    </script>
+
+    <button onclick="goBack()">Go Back</button>
+
+</body>
+</html>

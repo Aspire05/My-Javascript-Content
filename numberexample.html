@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Number Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>JavaScript Number Example</h1>
+
+    <button onclick="showNumberAlert()">Click me for Number Alert</button>
+    <button onclick="goBack()">Go Back</button>
+
+    <script>
+        // JavaScript code
+        var myNumber = 42; // This is a number variable
+
+        // Function to show the number alert
+        function showNumberAlert() {
+            alert("The value of myNumber is: " + myNumber);
+        }
+
+        // Function to go back to the previous page
+        function goBack() {
+            history.back();
+        }
+
+        // Display the number in the document
+        document.write("<p>The value of myNumber is: " + myNumber + "</p>");
+    </script>
+
+</body>
+</html>

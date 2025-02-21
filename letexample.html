@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML + JavaScript Example with 'let'</title>
+</head>
+<body>
+    <h1>HTML + JavaScript Example with 'let'</h1>
+    <p id="demo">This is a demonstration of HTML + JavaScript with 'let'.</p>
+    <button onclick="goBack()">Go Back</button>
+    <script>
+        // JavaScript code using 'let' for variable declarations
+        let myNumber = 42; // Number
+        let myString = "Hello, World!"; // String
+        let isTrue = true; // Boolean
+        let myObject = { key: "value" }; // Object
+        let myArray = [1, 2, 3]; // Array
+
+        // Manipulate variables
+        myNumber += 8;
+        myString += " Welcome to the example.";
+        isTrue = !isTrue;
+        myObject.newKey = "newValue";
+        myArray.push(4);
+
+        // Construct a message using the variables
+        let message = "Number: " + myNumber + "<br>";
+        message += "String: " + myString + "<br>";
+        message += "Boolean: " + isTrue + "<br>";
+        message += "Object: " + JSON.stringify(myObject) + "<br>";
+        message += "Array: " + myArray.join(", ");
+
+        // Update HTML content
+        document.getElementById("demo").innerHTML = message;
+
+        // Function to go back to the previous page
+        function goBack() {
+            history.back();
+        }
+    </script>
+</body>
+</html>

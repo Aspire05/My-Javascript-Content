@@ -1,0 +1,580 @@
+* {
+  padding: 0;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 4 columns */
+  grid-template-rows: repeat(5, 1fr);
+  margin: 0;
+  overflow: hidden;
+  height: 130vh;
+  
+}
+
+.menu {
+  grid-column: span 1;
+  grid-row: span 4;
+  display: grid;  
+  background:  #2d3f30;
+  flex-direction: column; 
+  justify-content: center; 
+  height: 101vh;
+  
+}
+
+.menu ul {
+  list-style-type: none;
+  flex-direction: column; /* Arrange items vertically */
+}
+
+.menu li {
+  margin: 4px ; /* Adjust spacing between menu items */
+  border: 3px solid black;
+  text-align: center; /* Center the text within the list item */ 
+  padding: 10px; 
+  width: 285px;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  font-weight: bold;
+  background: #FFDB58;
+}
+
+.menu a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  text-align: center; /* Center the text */
+  font-display: monospace;
+  font-size: 20px;
+}
+
+.menu li:hover {
+  background-color: #042453;
+}
+
+.menu li:hover a {
+  color: white;
+}
+
+#active-bg {
+  background-color: #042453;
+}
+
+#active-text {
+  color: white;
+}
+
+
+
+.header {
+  grid-column: 2 / span 4;
+  background:  #2d3f30;
+  border: 3px solid black;
+  
+}
+
+.content {
+  grid-area: 2 / 2 / span 4 / span 4;
+  background: darkgray;
+  border: 10px solid black; /* Inner border color and thickness */
+  position: relative;
+  overflow-y: scroll;
+  height: 67vh;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 24px;
+  
+
+}
+
+.header-home {
+  color: rgb(255, 246, 246);
+  font-size: 45px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.logo {
+  display: grid;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: self-start; /* Align to the top of the container */
+}
+
+.logo img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 5px solid black;
+  object-fit: content;
+  padding: 1px;
+}
+
+#text-bold {
+  font-weight: bold;
+}
+
+#button-active {
+  background: black;
+  color: white;
+}
+
+button {
+  width: 100px; 
+  height: 40px; 
+  font-size: 16px;
+}
+
+.button-navigator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 200px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.button-navigator a {
+  display: block;
+  text-decoration: none;
+  font-weight: 1000;
+  color: black;
+}
+
+.button-navigator button:disabled {
+  opacity: 0.9; 
+  cursor: not-allowed; 
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.primary-button {
+  margin-top: 40px;
+}
+
+.secondary-button {
+  margin-top: 40px;
+}
+
+/* JAVASCRIPT DATATYPES STARTS HERE */
+.datatypes-menu li{
+  margin: 4px ; /* Adjust spacing between menu items */
+  border: 3px solid black; 
+  padding: 5px; 
+  width: 150px;
+  float: left;
+  display: inline;
+  font-weight: bold;
+  background: #FFDB58;
+}
+
+.datatypes-menu ul{
+ list-style-type: none;
+}
+
+.datatypes-menu a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  text-align: center; /* Center the text */
+  font-display: monospace;
+  font-size: 20px;
+}
+
+.datatypes-menu li:hover {
+  background-color: #042453;
+}
+
+.datatypes-menu li:hover a {
+  color: white;
+}
+
+#table-center {
+  text-align: center;
+}
+
+#cell-center {
+  text-align: center;
+}
+
+th#datatypes-table,td#datatypes-table {
+  width: 20px; /* Adjust the width as needed */
+  padding-left: 10px;
+}
+
+table {
+  justify-content: center;
+  width: 800px;
+  margin: auto;
+  border-collapse: collapse;
+  margin-top: 5px;
+  }
+
+th, td {
+  border: 4px solid black; /* Border color */
+}
+
+th, td {
+  background-color: #FFDB58; /* Header background color */
+}
+
+img.img-syntax {
+  margin-top: 5px;
+  margin-left: 5%;
+}
+
+/* JAVASCRIPT DATATYPE ENDS HERE */
+
+/* JAVASCRIPT VARIABLES CSS START HERE */
+
+.js-v-menu li{
+  margin: 4px ; /* Adjust spacing between menu items */
+  border: 3px solid black; 
+  padding: 5px; 
+  width: 150px;
+  float: left;
+  display: inline;
+  font-weight: bold;
+  background: #FFDB58;
+}
+
+.js-v-menu ul{
+ list-style-type: none;
+}
+
+.js-v-menu a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  text-align: center; /* Center the text */
+  font-display: monospace;
+  font-size: 20px;
+}
+
+.js-v-menu li:hover {
+  background-color: #042453;
+}
+
+.js-v-menu li:hover a {
+  color: white;
+}
+
+.c-variables, .c-syntax-variables, .c-example-variables{
+  font-size: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.c-variables p, .c-syntax-variables p, .c-example-variables p{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img.img-syntax1 {
+  margin-top: 5px;
+  margin-left: 25%;
+}
+
+/* JAVASCRIPT VARIABLES CSS ENDS HERE */
+
+/* VARIABLE SCOPE CSS START HERE */
+
+.vscope-menu li{
+  margin: 4px ; /* Adjust spacing between menu items */
+  border: 3px solid black; 
+  padding: 5px; 
+  width: 150px;
+  float: left;
+  display: inline;
+  font-weight: bold;
+  background-color: #FFDB58;
+}
+
+.vscope-menu ul{
+ list-style-type: none;
+}
+
+.vscope-menu a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  text-align: center; /* Center the text */
+  font-display: monospace;
+  font-size: 20px;
+}
+
+.vscope-menu li:hover {
+  background-color:  #042453;
+}
+
+.vscope-menu li:hover a {
+  color: white
+}
+
+#table-mid {
+  text-align: center;
+}
+
+#cell-mid {
+  text-align: center;
+}
+
+th#vscope-table,td#vscope-table {
+  width: 20px; /* Adjust the width as needed */
+  padding-left: 10px;
+}
+
+table {
+  justify-content: center;
+  width: 800px;
+  margin: auto;
+  border-collapse: collapse;
+  margin-top: 5px;
+  }
+
+th, td {
+  border: 4px solid black; /* Border color */
+}
+
+th, td {
+  background-color: #FFDB58; /* Header background color */
+}
+
+img.img-syntax {
+  margin-top: 5px;
+  margin-left: 5px;
+  max-width: auto;
+  image-resolution: 1280%;
+ 
+  
+ 
+}
+
+.vscope-def, .vscope-syntax, .vscope-examples{
+  font-size: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.v-scope p, .vscope-syntax p, .vscope-examples p{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* END OF VARIABLE SCOPE HERE*/
+
+/* START HERE JAVASCRIPT VARIABLES NAME CSS*/
+
+.js-words-menu li{
+  margin: 4px ; /* Adjust spacing between menu items */
+  border: 3px solid black; 
+  padding: 5px; 
+  width: 150px;
+  float: left;
+  display: inline;
+  font-weight: bold;
+  background-color: #FFDB58
+
+}
+
+.js-words-menu ul{
+ list-style-type: none;
+
+}
+
+.js-words-menu a {
+  text-decoration: none;
+  color: black;
+  text-align: center; /* Center the text */
+  font-display: monospace;
+  font-size: 20px;
+  display: block;
+}
+
+.js-words-menu li:hover {
+  background-color: #042453;
+}
+
+
+.js-words-menu li:hover a {
+  color: white;
+}
+
+.js-words-def, .js-words-syntax, .js-words-examples{
+  font-size: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.js-words-def p, .js-words-syntax p, .js-words-examples p{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* END OF JAVASCRIPT VARIABLES NAME CSS HERE */
+
+/* START HERE RESERVED WORDS CSS*/
+
+.r-words-menu li{
+  margin: 4px ; /* Adjust spacing between menu items */
+  border: 3px solid black; 
+  padding: 5px; 
+  width: 150px;
+  float: left;
+  display: inline;
+  font-weight: bold;
+  background-color: #FFDB58
+
+}
+
+.r-words-menu ul{
+ list-style-type: none;
+
+}
+
+.r-words-menu a {
+  text-decoration: none;
+  color: black;
+  text-align: center; /* Center the text */
+  font-display: monospace;
+  font-size: 20px;
+  display: block;
+}
+
+.r-words-menu li:hover {
+  background-color: #042453;
+}
+
+
+.r-words-menu li:hover a {
+  color: white;
+}
+
+.r-words-def, .r-words-syntax, .r-words-examples{
+  font-size: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.r-words-def p, .r-words-syntax p, .r-words-examples p{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#table-mid {
+  text-align: center;
+}
+
+#cell-mid {
+  text-align: center;
+}
+
+th#r-words-table,td#r-words-table {
+  width: 20px; /* Adjust the width as needed */
+  padding-left: 10px;
+}
+
+table {
+  justify-content: center;
+  width: 800px;
+  margin: auto;
+  border-collapse: collapse;
+  margin-top: 5px;
+  }
+
+th, td {
+  border: 4px solid black; /* Border color */
+}
+
+th, td {
+  background-color: #FFDB58; /* Header background color */
+}
+
+/* END OF RESERVED WORDS CSS HERE */
+
+/* DEVELOPER CSS START HERE */
+
+.dev-button-menu li{
+  margin: 4px ; /* Adjust spacing between menu items */
+  border: 3px solid black; 
+  padding: 5px; 
+  width: 150px;
+  float: left;
+  display: inline;
+  font-weight: bold;
+  background-color: #FFDB58
+
+}
+
+.dev-button-menu ul{
+ list-style-type: none;
+
+}
+
+.dev-button-menu a {
+  text-decoration: none;
+  color: black;
+  text-align: center; /* Center the text */
+  font-display: monospace;
+  font-size: 20px;
+  display: block;
+}
+
+.dev-button-menu li:hover {
+  background-color: #042453;
+}
+
+
+.dev-button-menu li:hover a {
+  color: white;
+}
+
+.dev-1 img{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 5px solid black;
+  object-fit: content;
+  padding: 1px;
+  
+}
+.mark,.john,.fed{
+  padding: 5px;
+  margin: 5px;
+  border: 3px solid black;
+  font-size: 25px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: whitesmoke;
+  padding-bottom: 10px;
+  text-align: center;
+
+}
+
+.naming,.section,.city{
+  margin-top: 1px;
+  margin-bottom: 1px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  line-height: normal;
+}
+
+.overall-content{
+  grid-area: 2 / 2 / span 4 / span 4;
+  background: darkgray;
+  border: 10px solid black; /* Inner border color and thickness */
+  position: relative;
+  overflow-y: scroll;
+  outline-offset: 20px;
+  height: 67vh;
+}
+
+/* END OF DEVELOPER CSS*/
